@@ -1,0 +1,6 @@
+ERC165
+======
+
+.. autosolcontract:: ERC165
+   :members:
+   :undoc-members:

@@ -2,4 +2,4 @@ Math
 ====
 
 .. toctree::
-    safemathnew.rst
+    safemath.rst

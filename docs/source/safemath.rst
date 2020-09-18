@@ -1,6 +1,6 @@
-SafeMathNew
+SafeMath
 ===========
 
-.. autosollibrary:: SafeMathNew
+.. autosollibrary:: SafeMath
    :members:
    :undoc-members:
