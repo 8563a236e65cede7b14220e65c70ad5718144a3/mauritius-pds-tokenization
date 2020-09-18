@@ -1,0 +1,48 @@
+{
+  "name": "mauritius-pds-tokenization",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docs": "scripts/docs.sh",
+    "lint": "npm run lint:js && npm run lint:sol && npm run lint:slither",
+    "lint:js": "eslint --ignore-path .gitignore .",
+    "lint:sol": "solhint --max-warnings 0 \"contracts/**/*.sol\"",
+    "lint:slither": "slither .",
+    "test": "mocha --exit --recursive --ignore test/C20InvestProxy.test.js && mocha --exit test/C20InvestProxy.test.js",
+    "docker_setup": "scripts/docker_setup.sh",
+    "docker_interactive": "docker container run -it --mount type=bind,source=\"$(pwd)\"/run,target=/mauritius-pds-tokenization contract_tester",
+    "save": "rm -rf ../mauritius-pds-tokenization/* && cp -r . ../mauritius-pds-tokenization && chmod -R 777 ../mauritius-pds-tokenization/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/8563a236e65cede7b14220e65c70ad5718144a3/mauritius-pds-tokenization.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/8563a236e65cede7b14220e65c70ad5718144a3/mauritius-pds-tokenization/issues"
+  },
+  "homepage": "https://github.com/8563a236e65cede7b14220e65c70ad5718144a3/mauritius-pds-tokenization#readme",
+  "devDependencies": {
+    "@openzeppelin/test-environment": "^0.1.5",
+    "@openzeppelin/test-helpers": "^0.5.6",
+    "chai": "^4.2.0",
+    "eslint": "^7.9.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-mocha-no-only": "^1.1.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "ethereumjs-util": "^7.0.5",
+    "ganache-cli": "^6.10.2",
+    "ganache-core": "^2.11.3",
+    "jsdoc": "^3.6.5",
+    "mocha": "^8.1.3",
+    "solhint": "^3.2.0",
+    "solidity-coverage": "^0.7.10",
+    "truffle": "^5.1.45"
+  }
+}
