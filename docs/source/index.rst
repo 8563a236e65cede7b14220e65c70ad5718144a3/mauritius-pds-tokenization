@@ -10,7 +10,11 @@ Welcome to Mauritius PDS Tokenization's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-
+   initializable_index.rst
+   proxy_index.rst
+   access_index.rst
+   math_index.rst
+   utils_index.rst
 
 Indices and tables
 ==================

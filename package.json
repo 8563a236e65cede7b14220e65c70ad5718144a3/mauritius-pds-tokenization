@@ -9,7 +9,7 @@
     "lint:js": "eslint --ignore-path .gitignore .",
     "lint:sol": "solhint --max-warnings 0 \"contracts/**/*.sol\"",
     "lint:slither": "slither .",
-    "test": "mocha --exit --recursive --ignore test/C20InvestProxy.test.js && mocha --exit test/C20InvestProxy.test.js",
+    "test": "mocha --exit --recursive",
     "docker_setup": "scripts/docker_setup.sh",
     "docker_interactive": "docker container run -it --mount type=bind,source=\"$(pwd)\"/run,target=/mauritius-pds-tokenization contract_tester",
     "save": "rm -rf ../mauritius-pds-tokenization/* && cp -r . ../mauritius-pds-tokenization && chmod -R 777 ../mauritius-pds-tokenization/"
@@ -39,6 +39,7 @@
     "ethereumjs-util": "^7.0.5",
     "ganache-cli": "^6.10.2",
     "ganache-core": "^2.11.3",
+    "husky": "^4.3.0",
     "jsdoc": "^3.6.5",
     "mocha": "^8.1.3",
     "solhint": "^3.2.0",
