@@ -44,7 +44,7 @@ is large room for improvement.
 
 Primarily, the way these projects are financed can be changed, minimizing
 risk for all parties. In normal operation, a contract known as a VEFA
-(vente en l’état futur d’achèvement). These are used for selling off plan,
+(vente en l’état futur d’achèvement) is used. These are used for selling off plan,
 usually with the following installment
 `terms <https://www.edbmauritius.org/media/3343/guidelines-pds_july-2020.pdf>`_:
 
