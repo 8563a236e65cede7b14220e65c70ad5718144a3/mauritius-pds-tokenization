@@ -24,4 +24,5 @@ contract PDSApartments is ERC721 {
     {
         
     }
+    
 } 
