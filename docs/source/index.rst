@@ -83,9 +83,6 @@ the majority of the cost of the project. Given up front funding, it
 may be possible to buy bulk purchases of building materials which
 should allow for more negotiating power.
 
-Smart Contract Features
------------------------
-
 Setup
 -----
 
