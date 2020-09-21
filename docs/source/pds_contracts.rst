@@ -55,7 +55,8 @@ will get a return on their investment since they purchase the property.
 This differs from the traditional off-plan investment where investors
 do not get this upside exposure.
 
-If returns are capped at 100% (and building costs reduced),
+If returns are capped at 100% (and 
+`building costs reduced <https://bct.eco.umass.edu/publications/articles/getting-contractor-discounts/>`_),
 this relationship can be even more pronounced. The $200000 investment
 paying out $400000, leading to a net investment of $300000 for tax
 residency by the investor.
@@ -79,3 +80,8 @@ Contracts
 .. toctree::
     pdscontrolcontract.rst
     pdsapartments.rst
+
+
+Resources
+---------
+`Getting Contractor Discounts <https://bct.eco.umass.edu/publications/articles/getting-contractor-discounts/>`_
