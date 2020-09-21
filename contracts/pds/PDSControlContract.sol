@@ -1,6 +1,8 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.7.0;
 
+import "../token/ERC721/IERC721.sol";
+
 /// @notice PDS Project Smart Contract
 /// @title Mauritius Property Development Scheme
 /// @dev This contract represents the owner of all
@@ -9,5 +11,14 @@ pragma solidity ^0.7.0;
 /// contractors and distribution of returns between
 /// ERC20 token investors.
 contract PDSControlContract {
-
+    IERC721 apartmentsInterface;
+    
+    /// @dev Constructor for control contract
+    /// @param apartmentAddress The address of the ERC721 instance
+    /// that mints the tokens representing apartments
+    constructor(address[] memory apartmentAddress) {
+        apartmentsInterface = IERC721(apartmentAddress);
+        
+    }
+    
 }
