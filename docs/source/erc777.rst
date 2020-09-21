@@ -1,0 +1,6 @@
+ERC777
+======
+
+.. autosolcontract:: ERC777
+   :members:
+   :undoc-members:
