@@ -78,3 +78,4 @@ Contracts
 
 .. toctree::
     pdscontrolcontract.rst
+    pdsapartments.rst
