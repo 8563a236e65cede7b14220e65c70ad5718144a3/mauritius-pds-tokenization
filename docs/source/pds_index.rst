@@ -71,18 +71,18 @@ follows:
    below), which in effect will perform project wide tasks.
 2. *Apartments* should each be an ERC721 token, with meta information
    describing a particular apartment that will be built within the
-   PDS project. Each *Apartment* token will have a corresponding ERC20
+   PDS project. Each *Apartment* token will have a corresponding ERC777
    contract that will subdivide investment.
-3. Each ERC20 contract will issue a fixed supply of tokens (say 100) that
+3. Each ERC777 contract will issue a fixed supply of tokens (say 100) that
    will apportion the building costs for the apartment represented by its
-   linked ERC721 token. The ERC20 tokens will represent a share in the
-   returns arising from sale of the property. The ERC20 tokens may also
+   linked ERC721 token. The ERC777 tokens will represent a share in the
+   returns arising from sale of the property. The ERC777 tokens may also
    represent voting rights.
 
-The ERC20 tokens will then be issued through a Security Token Offering.
+The ERC777 tokens will then be issued through a Security Token Offering.
 Due to the short lifespan of this investment, the tokens should not be
 listed on any exchange. An inbuilt exchange mechanism will provide a
-secondary market - owners of ERC20 tokens being able to list their tokens
+secondary market - owners of ERC777 tokens being able to list their tokens
 for sale at a price of their choosing and both existing token holders and
 outsiders being able to purchase listed tokens. In this way, we may
 facilitate liquidity.

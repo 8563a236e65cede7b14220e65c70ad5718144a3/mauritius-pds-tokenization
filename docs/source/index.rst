@@ -168,6 +168,7 @@ This saves the work within the root project directory on the host machine, in a 
    :caption: Contents:
 
    pds_index.rst
+   pds_contracts.rst
    token_index.rst
    initializable_index.rst
    proxy_index.rst
