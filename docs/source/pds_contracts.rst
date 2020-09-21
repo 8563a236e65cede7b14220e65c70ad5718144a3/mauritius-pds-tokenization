@@ -80,8 +80,10 @@ Contracts
 .. toctree::
     pdscontrolcontract.rst
     pdsapartments.rst
+    pdsinvestmenttoken.rst
 
 
 Resources
 ---------
+
 `Getting Contractor Discounts <https://bct.eco.umass.edu/publications/articles/getting-contractor-discounts/>`_

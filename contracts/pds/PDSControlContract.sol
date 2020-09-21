@@ -12,7 +12,11 @@ import "../token/ERC721/IERC721Receiver.sol";
 /// contractors and distribution of returns between
 /// ERC20 token investors.
 contract PDSControlContract is IERC721Receiver {
+    /// @dev An IERC721 interface to perform standard ERC721 operations
     IERC721 apartmentsInterface;
+
+    /// @dev bytes4(keccak256("onERC721Received(address,address,uint256,bytes)"))
+    bytes4 private _onERC721ReceivedMagicNumber;
     
     /// @dev Event required for ERC721Receiver interface
     /// @param operator The address which called `safeTransferFrom` function
@@ -27,6 +31,7 @@ contract PDSControlContract is IERC721Receiver {
     /// that mints the tokens representing apartments
     constructor(address apartmentAddress) {
         apartmentsInterface = IERC721(apartmentAddress);
+        _onERC721ReceivedMagicNumber = bytes4(keccak256("onERC721Received(address,address,uint256,bytes)"));
         
     }
     
@@ -44,14 +49,13 @@ contract PDSControlContract is IERC721Receiver {
     /// @param from The address which previously owned the token
     /// @param tokenId The NFT identifier which is being transferred
     /// @param data Additional data with no specified format
-    /// @param gas Gas left from the transaction
-    /// @return `bytes4(keccak256("onERC721Received(address,address,uint256,bytes)"))`
+    /// @return _onERC721ReceivedMagicNumber
     /// unless throwing
     function onERC721Received(address operator, address from, uint256 tokenId, bytes memory data)
         public override returns (bytes4)
     {
         emit Received(operator, from, tokenId, data, gasleft());
-        return "0x150b7a02";
+        return _onERC721ReceivedMagicNumber;
     }
     
 }
